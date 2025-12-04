@@ -2,30 +2,93 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <title>Currículum - Rubén Parra</title>
+    <title>Currículum | Rubén Parra – Desarrollador de Aplicaciones Multiplataforma</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+          content="Rubén Parra – Desarrollador de Aplicaciones Multiplataforma. Especializado en Java, Python, Angular, Android y bases de datos SQL.">
     <link rel="stylesheet" href="style.css">
-
 </head>
 <body>
     <div class="curriculum">
-        <!-- Hero Section -->
+
+        <!-- HEADER FIJO -->
+        <header class="site-header">
+            <div class="site-header-inner">
+                <div class="logo-area">
+                    <span class="logo-initials">RP</span>
+                    <span class="logo-name">Rubén Parra</span>
+                </div>
+                <nav class="main-nav">
+                    <a href="#hero">Inicio</a>
+                    <a href="#formacion">Formación</a>
+                    <a href="#stack">Tecnologías</a>
+                    <a href="#habilidades">Habilidades</a>
+                    <a href="#experiencia">Experiencia</a>
+                    <a href="#proyectos">Proyectos</a>
+                    <a href="#contacto">Contacto</a>
+                </nav>
+            </div>
+        </header>
+
+        <!-- HERO / PRESENTACIÓN -->
         <section class="hero" id="hero">
             <div class="hero-bg"></div>
 
             <div class="hero-content fade-up-on-load">
-                <!-- Avatar con foto -->
-                <div class="hero-avatar pop-in">
-                    <!-- Cambia Curriculimfoto.jpg por la ruta real de tu imagen -->
-                    <img src="Foto/Curriculimfoto.jpg" alt="Foto de Ruben Parra" class="hero-photo">
+                <div class="hero-main">
+                    <!-- Avatar con foto -->
+                    <div class="hero-avatar pop-in">
+                        <!-- Cambia la ruta por tu imagen real -->
+                        <img src="Foto/Curriculimfoto.jpg"
+                             alt="Foto de Rubén Parra"
+                             class="hero-photo">
+                    </div>
+
+                    <div class="hero-text">
+                        <h1 class="hero-name">Rubén Parra</h1>
+                        <p class="hero-role">Desarrollador de Aplicaciones Multiplataforma</p>
+
+                        <p class="hero-summary">
+                            Desarrollador en formación con foco en soluciones multiplataforma:
+                            escritorio, web y móvil. Me interesan las arquitecturas limpias,
+                            la experiencia de usuario y la automatización de procesos para
+                            hacer la tecnología más útil y sencilla para las personas.
+                        </p>
+
+                        <div class="hero-availability fade-in-delay">
+                            <div class="hero-availability-icon">🌍</div>
+                            <span>Disponible para nuevas oportunidades</span>
+                        </div>
+
+                        <div class="hero-cta">
+                            <a href="#contacto" class="btn btn-primary">Contactar ahora</a>
+                            <a href="#proyectos" class="btn btn-outline">Ver proyectos</a>
+                        </div>
+                    </div>
                 </div>
 
-                <h1 class="hero-name">Ruben Parra</h1>
-                <p class="hero-role">Desarrollador de Aplicaciones Multiplataforma</p>
-
-                <div class="hero-availability fade-in-delay">
-                    <div class="hero-availability-icon">🌍</div>
-                    <span>Disponible para nuevas oportunidades</span>
+                <!-- BLOQUE CONTACTO RÁPIDO -->
+                <div class="hero-contact fade-in-delay">
+                    <div class="hero-contact-item">
+                        <span class="hero-contact-label">Email</span>
+                        <a href="mailto:ruben.parra@example.com">ruben.parra@example.com</a>
+                    </div>
+                    <div class="hero-contact-item">
+                        <span class="hero-contact-label">Teléfono</span>
+                        <a href="tel:+34600000000">+34 600 00 00 00</a>
+                    </div>
+                    <div class="hero-contact-item">
+                        <span class="hero-contact-label">LinkedIn</span>
+                        <a href="https://www.linkedin.com" target="_blank" rel="noopener">
+                            linkedin.com/in/rubenparra
+                        </a>
+                    </div>
+                    <div class="hero-contact-item">
+                        <span class="hero-contact-label">GitHub</span>
+                        <a href="https://github.com" target="_blank" rel="noopener">
+                            github.com/rubenparra
+                        </a>
+                    </div>
                 </div>
             </div>
 
@@ -36,200 +99,340 @@
             </div>
         </section>
 
-        <!-- Educación -->
+        <!-- FORMACIÓN -->
         <section class="section" id="formacion">
             <div class="section-inner">
                 <div class="section-header animate-on-scroll">
                     <div class="section-header-icon">🎓</div>
                     <h2 class="section-title">Formación</h2>
+                    <p class="section-subtitle">
+                        Base académica orientada al desarrollo de software y la tecnología.
+                    </p>
                 </div>
 
                 <div class="education-list">
-                    <div class="card card-gradient animate-on-scroll">
+                    <article class="card card-gradient animate-on-scroll">
                         <div class="card-header">
                             <div>
-                                <h3 class="card-title">Grado Superior en DAM</h3>
-                                <p class="card-subtitle">Desarrollo de Aplicaciones Multiplataforma</p>
+                                <h3 class="card-title">Grado Superior en Desarrollo de Aplicaciones Multiplataforma (DAM)</h3>
+                                <p class="card-subtitle">Centro / Instituto – 20XX – Actualidad</p>
                             </div>
-                            <span class="badge-primary">Último Año</span>
+                            <span class="badge-primary">Último año</span>
                         </div>
                         <p class="card-text">
-                            Formación especializada en desarrollo de software multiplataforma,
-                            abarcando tecnologías modernas y metodologías de desarrollo ágil.
+                            Formación especializada en desarrollo de software multiplataforma
+                            abordando:
                         </p>
-                    </div>
+                        <ul class="card-list">
+                            <li>Programación orientada a objetos (Java, Python).</li>
+                            <li>Desarrollo de interfaces gráficas (JavaFX, Android).</li>
+                            <li>Desarrollo web (HTML, CSS, JavaScript, Angular).</li>
+                            <li>Bases de datos relacionales (SQL, modelado y consultas).</li>
+                            <li>Metodologías ágiles y control de versiones con Git.</li>
+                        </ul>
+                    </article>
 
-                    <div class="card animate-on-scroll">
-                        <h3 class="card-title">Bachillerato</h3>
-                        <p class="card-subtitle">Base académica sólida y completa</p>
-                    </div>
+                    <article class="card animate-on-scroll">
+                        <div class="card-header">
+                            <div>
+                                <h3 class="card-title">Bachillerato</h3>
+                                <p class="card-subtitle">Modalidad / Instituto – 20XX – 20XX</p>
+                            </div>
+                        </div>
+                        <p class="card-text">
+                            Formación general que fortaleció mi capacidad de análisis,
+                            razonamiento lógico y disciplina de estudio.
+                        </p>
+                    </article>
                 </div>
             </div>
         </section>
 
-        <!-- Stack Tecnológico -->
+        <!-- STACK TECNOLÓGICO -->
         <section class="section section-alt" id="stack">
             <div class="section-inner">
                 <div class="section-header animate-on-scroll">
                     <div class="section-header-icon">💻</div>
                     <h2 class="section-title">Stack Tecnológico</h2>
+                    <p class="section-subtitle">
+                        Tecnologías con las que trabajo y en las que sigo profundizando cada día.
+                    </p>
                 </div>
 
-                <div class="grid tech-grid">
-                    <div class="card tech-card animate-on-scroll">
-                        <h3 class="card-title">Python</h3>
-                        <p class="card-text">Backend &amp; Scripting</p>
+                <div class="tech-groups">
+                    <div class="tech-group animate-on-scroll">
+                        <h3 class="tech-group-title">Backend &amp; Lógica</h3>
+                        <div class="grid tech-grid">
+                            <div class="card tech-card">
+                                <h4 class="card-title">Python</h4>
+                                <p class="card-text">Scripts, automatización y lógica de negocio.</p>
+                            </div>
+                            <div class="card tech-card">
+                                <h4 class="card-title">Java</h4>
+                                <p class="card-text">Aplicaciones de escritorio y backend.</p>
+                            </div>
+                            <div class="card tech-card">
+                                <h4 class="card-title">SQL</h4>
+                                <p class="card-text">Diseño de esquemas y consultas.</p>
+                            </div>
+                        </div>
                     </div>
-                    <div class="card tech-card animate-on-scroll">
-                        <h3 class="card-title">JavaFX</h3>
-                        <p class="card-text">Aplicaciones de Escritorio</p>
+
+                    <div class="tech-group animate-on-scroll">
+                        <h3 class="tech-group-title">Frontend &amp; UI</h3>
+                        <div class="grid tech-grid">
+                            <div class="card tech-card">
+                                <h4 class="card-title">HTML &amp; CSS</h4>
+                                <p class="card-text">Maquetación semántica y diseño responsive.</p>
+                            </div>
+                            <div class="card tech-card">
+                                <h4 class="card-title">JavaScript</h4>
+                                <p class="card-text">Interactividad y lógica en cliente.</p>
+                            </div>
+                            <div class="card tech-card">
+                                <h4 class="card-title">Angular</h4>
+                                <p class="card-text">Aplicaciones SPA estructuradas.</p>
+                            </div>
+                        </div>
                     </div>
-                    <div class="card tech-card animate-on-scroll">
-                        <h3 class="card-title">Angular</h3>
-                        <p class="card-text">Desarrollo Web Frontend</p>
-                    </div>
-                    <div class="card tech-card animate-on-scroll">
-                        <h3 class="card-title">Android</h3>
-                        <p class="card-text">Aplicaciones Móviles</p>
-                    </div>
-                    <div class="card tech-card animate-on-scroll">
-                        <h3 class="card-title">JavaScript</h3>
-                        <p class="card-text">Desarrollo Web Completo</p>
-                    </div>
-                    <div class="card tech-card animate-on-scroll">
-                        <h3 class="card-title">SQL</h3>
-                        <p class="card-text">Bases de Datos</p>
+
+                    <div class="tech-group animate-on-scroll">
+                        <h3 class="tech-group-title">Aplicaciones de Escritorio &amp; Móvil</h3>
+                        <div class="grid tech-grid">
+                            <div class="card tech-card">
+                                <h4 class="card-title">JavaFX</h4>
+                                <p class="card-text">Interfaces de escritorio modernas.</p>
+                            </div>
+                            <div class="card tech-card">
+                                <h4 class="card-title">Android</h4>
+                                <p class="card-text">Aplicaciones móviles nativas.</p>
+                            </div>
+                        </div>
                     </div>
                 </div>
+
             </div>
         </section>
 
-        <!-- Habilidades -->
+        <!-- HABILIDADES BLANDAS -->
         <section class="section" id="habilidades">
             <div class="section-inner">
                 <div class="section-header animate-on-scroll">
                     <h2 class="section-title">Habilidades</h2>
                     <p class="section-subtitle">
-                        Competencias que definen mi forma de trabajar
+                        Competencias que definen mi forma de trabajar en equipo y abordar proyectos.
                     </p>
                 </div>
 
                 <div class="grid skills-grid">
                     <div class="card skill-card animate-on-scroll">
                         <div class="skill-icon">🤝</div>
-                        <h3 class="card-title">Trabajo en Equipo</h3>
+                        <h3 class="card-title">Trabajo en equipo</h3>
                         <p class="card-text">
-                            Colaboración efectiva y comunicación fluida.
+                            Colaboración efectiva, buena comunicación y escucha activa para alinear
+                            al equipo con los objetivos del proyecto.
                         </p>
                     </div>
                     <div class="card skill-card animate-on-scroll">
                         <div class="skill-icon">⭐</div>
                         <h3 class="card-title">Liderazgo</h3>
                         <p class="card-text">
-                            Capacidad para guiar y motivar equipos.
+                            Capacidad para organizar tareas, marcar prioridades y motivar al equipo
+                            hacia resultados de calidad.
                         </p>
                     </div>
                     <div class="card skill-card animate-on-scroll">
                         <div class="skill-icon">💡</div>
-                        <h3 class="card-title">Resolución de Problemas</h3>
+                        <h3 class="card-title">Resolución de problemas</h3>
                         <p class="card-text">
-                            Enfoque analítico y soluciones creativas.
+                            Enfoque analítico, búsqueda de causas raíz y propuesta de soluciones
+                            prácticas y mantenibles.
                         </p>
                     </div>
                     <div class="card skill-card animate-on-scroll">
                         <div class="skill-icon">📈</div>
                         <h3 class="card-title">Adaptabilidad</h3>
                         <p class="card-text">
-                            Rápida adaptación a nuevos entornos.
+                            Comodidad en entornos cambiantes, nuevas herramientas y contextos
+                            técnicos variados.
                         </p>
                     </div>
                     <div class="card skill-card animate-on-scroll">
                         <div class="skill-icon">⚡</div>
-                        <h3 class="card-title">Aprendizaje Rápido</h3>
+                        <h3 class="card-title">Aprendizaje rápido</h3>
                         <p class="card-text">
-                            Asimilación veloz de nuevas tecnologías.
+                            Curiosidad constante y capacidad para incorporar nuevas tecnologías
+                            y buenas prácticas en poco tiempo.
                         </p>
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- Experiencia -->
+        <!-- EXPERIENCIA (FORMATO LÍNEA DE TIEMPO) -->
         <section class="section section-alt" id="experiencia">
             <div class="section-inner">
                 <div class="section-header animate-on-scroll">
                     <div class="section-header-icon">💼</div>
                     <h2 class="section-title">Experiencia</h2>
+                    <p class="section-subtitle">
+                        Experiencias laborales que han reforzado mi responsabilidad,
+                        comunicación y trato con personas.
+                    </p>
                 </div>
 
-                <div class="experience-list">
-                    <div class="card experience-card animate-on-scroll">
+                <div class="experience-timeline">
+                    <article class="card experience-card animate-on-scroll">
                         <div class="experience-icon">🚗</div>
                         <div class="experience-content">
                             <div class="experience-header">
-                                <h3 class="card-title">Conductor Privado</h3>
+                                <div>
+                                    <h3 class="card-title">Conductor privado</h3>
+                                    <p class="card-subtitle">Empresa / Autónomo – 20XX – Actualidad</p>
+                                </div>
                                 <span class="badge-neutral">Actualidad</span>
                             </div>
-                            <p class="card-text">
-                                Servicio de conducción para clientes internacionales.<br>
-                                Uso diario del inglés en entorno profesional.
-                            </p>
+                            <ul class="card-list">
+                                <li>Servicio de conducción para clientes internacionales.</li>
+                                <li>Uso diario del inglés en un entorno profesional.</li>
+                                <li>Gestión del tiempo y rutas para optimizar desplazamientos.</li>
+                                <li>Trato directo con el cliente, reforzando habilidades sociales.</li>
+                            </ul>
                         </div>
-                    </div>
+                    </article>
 
-                    <div class="card experience-card animate-on-scroll">
+                    <article class="card experience-card animate-on-scroll">
                         <div class="experience-icon">🛟</div>
                         <div class="experience-content">
                             <div class="experience-header">
-                                <h3 class="card-title">Socorrista</h3>
-                                <span class="badge-neutral">Experiencia Previa</span>
+                                <div>
+                                    <h3 class="card-title">Socorrista</h3>
+                                    <p class="card-subtitle">Instalaciones deportivas / Playa – 20XX – 20XX</p>
+                                </div>
+                                <span class="badge-neutral">Experiencia previa</span>
                             </div>
-                            <p class="card-text">
-                                Responsabilidad, toma de decisiones bajo presión y atención al detalle.
-                            </p>
+                            <ul class="card-list">
+                                <li>Vigilancia activa y prevención de riesgos.</li>
+                                <li>Toma de decisiones bajo presión en situaciones críticas.</li>
+                                <li>Alta atención al detalle y responsabilidad sobre la seguridad de las personas.</li>
+                            </ul>
                         </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- PROYECTOS -->
+        <section class="section" id="proyectos">
+            <div class="section-inner">
+                <div class="section-header animate-on-scroll">
+                    <div class="section-header-icon">🚀</div>
+                    <h2 class="section-title">Proyectos</h2>
+                    <p class="section-subtitle">
+                        Una selección de proyectos que muestran mi forma de programar y de entender los productos digitales.
+                    </p>
+                </div>
+
+                <div class="grid project-grid">
+
+                    <article class="card project-card animate-on-scroll">
+                        <div class="project-header">
+                            <h3 class="card-title">Casino de Montepinar</h3>
+                            <span class="project-tag">Web • Frontend</span>
+                        </div>
+                        <p class="card-text">
+                            Casino virtual desarrollado en HTML, CSS y JavaScript que simula
+                            juegos clásicos como ruleta, blackjack, tragaperras y
+                            apuestas deportivas. Incluye gestión de saldo virtual y
+                            feedback visual para mejorar la experiencia de usuario.
+                        </p>
+                        <div class="project-meta">
+                            <span class="project-tech">HTML</span>
+                            <span class="project-tech">CSS</span>
+                            <span class="project-tech">JavaScript</span>
+                        </div>
+                        <a href="Proyectos/casino.zip" class="project-link" download>
+                            Descargar proyecto
+                        </a>
+                    </article>
+
+                    <article class="card project-card animate-on-scroll">
+                        <div class="project-header">
+                            <h3 class="card-title">Página Web FixTime</h3>
+                            <span class="project-tag">Web • Angular &amp; Firebase</span>
+                        </div>
+                        <p class="card-text">
+                            Plataforma desarrollada en Angular y Firebase para una empresa
+                            imaginaria que conecta a profesionales del mantenimiento del hogar
+                            con clientes que necesitan sus servicios. Incluye gestión de
+                            usuarios, registro de servicios y panel básico de administración.
+                        </p>
+                        <div class="project-meta">
+                            <span class="project-tech">Angular</span>
+                            <span class="project-tech">TypeScript</span>
+                            <span class="project-tech">Firebase</span>
+                        </div>
+                        <a href="https://drive.google.com/file/d/1zOgiqDlkdxZS3EEp6TTCzAbC0zDVkdwW/view?usp=drive_link"
+                           class="project-link" target="_blank" rel="noopener">
+                            Ver vídeo demo
+                        </a>
+                    </article>
+
+                    <!-- Ejemplo de tercer proyecto futuro -->
+                    <!--
+                    <article class="card project-card animate-on-scroll">
+                        <div class="project-header">
+                            <h3 class="card-title">Nombre del Proyecto</h3>
+                            <span class="project-tag">Móvil • Android</span>
+                        </div>
+                        <p class="card-text">
+                            Breve descripción del proyecto, objetivos y tecnologías usadas.
+                        </p>
+                        <div class="project-meta">
+                            <span class="project-tech">Android</span>
+                            <span class="project-tech">Java</span>
+                            <span class="project-tech">API REST</span>
+                        </div>
+                        <a href="#" class="project-link">
+                            Ver código en GitHub
+                        </a>
+                    </article>
+                    -->
+                </div>
+            </div>
+        </section>
+
+        <!-- CONTACTO -->
+        <section class="section" id="contacto">
+            <div class="section-inner cta-section animate-on-scroll">
+                <h2 class="cta-title">¿Trabajamos juntos?</h2>
+                <p class="cta-subtitle">
+                    Estoy abierto a prácticas, primeros puestos como desarrollador junior
+                    y proyectos en los que pueda aportar valor mientras sigo creciendo.
+                </p>
+
+                <div class="cta-actions">
+                    <a href="mailto:ruben.parra@example.com" class="cta-button">
+                        Enviar un correo
+                    </a>
+                    <div class="cta-links">
+                        <a href="https://www.linkedin.com" target="_blank" rel="noopener">LinkedIn</a>
+                        <span>·</span>
+                        <a href="https://github.com" target="_blank" rel="noopener">GitHub</a>
                     </div>
                 </div>
             </div>
         </section>
 
-<!-- Proyectos -->
-<section class="section" id="proyectos">
-    <div class="section-inner">
-        <div class="section-header animate-on-scroll">
-            <div class="section-header-icon">🚀</div>
-            <h2 class="section-title">Proyectos</h2>
-        </div>
-
-        <div class="grid project-grid">
-
-            <div class="card project-card animate-on-scroll">
-                <h3 class="card-title">Casino de Montepinar</h3>
-                <p class="card-text">
-                    Casino virtual desarrollado en HTML, CSS y JS que simula juegos de azar clásicos como la ruleta, el blackjack,  las tragaperras y apuestas deportivas.
-                </p>
-                <a href="https://drive.google.com/file/d/1zOgiqDlkdxZS3EEp6TTCzAbC0zDVkdwW/view?usp=drive_link" class="project-link" download>
-                    Descargar proyecto
-                </a>
-            </div>
-
-            <div class="card project-card animate-on-scroll">
-                <h3 class="card-title">Pagina Web FixTime</h3>
-                <p class="card-text">
-                    Proyecto hecho con Firebase y Angular sobre una empresa imaginaria que pone en contacto a profesionales del mantenimiento del hogar con clientes que necesitan sus servicios.
-                </p>
-                <!-- DESCARGA DE VIDEO -->
-                <a href="https://youtu.be/oMXBNFnicJE" download>
-                    Descargar vídeo demo
-                </a>
-            </div>
-        </div>
+        <footer class="site-footer">
+            <p>&copy; <span id="year"></span> Rubén Parra · Desarrollador de Aplicaciones Multiplataforma</p>
+        </footer>
     </div>
-</section>
 
     <script src="script.js"></script>
+    <script>
+        // Año automático en el footer
+        document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
 </body>
 </html>
-
-
-
